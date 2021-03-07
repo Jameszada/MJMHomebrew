@@ -1,0 +1,905 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MJAMESM",
+				"abbreviation": "MJM",
+				"full": "Magnificent's James Mansion",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1615133174,
+		"dateLastModified": 1615133174
+	},
+	"monster": [
+		{
+			"name": "Ground Digger",
+			"shortName": "Digger",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "H",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"carapaça pesadona"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d20 + 75",
+				"average": 232
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 60
+			},
+			"str": 22,
+			"dex": 11,
+			"con": 21,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"save": {
+				"con": "+9",
+				"str": "+10"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				},
+				{
+					"resist": [
+						"fire",
+						"poison"
+					]
+				}
+			],
+			"conditionImmune": [
+				"deafened",
+				"prone"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The digger can make two attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}30 ({@damage 4d12 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, reach 60/120 ft., one target. {@h}30 ({@damage 3d10 + 6}) bludgeoning damage and ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Swallow {@recharge 5}",
+					"entries": [
+						"The digger can attempt to swallow a creature that is in range of his bite attack. The creature can make a Dexterity Saving Throw {@dc 16}. In a failiure, the creature is considered {@condition grappled} and {@condition restrained} and takes ({@damage 3d8 + 6}) piercing damage and ({@damage 6d6}) acid damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Opportunistic Assault",
+					"entries": [
+						"As a bonus action, the digger can move up to its speed toward a hostile creature that is {@condition prone} and the digger can sense it and make a bite attack"
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://media.discordapp.net/attachments/726545054017126401/818134427606712330/b169ea168344757c3891748e87a25d98bb1346fb.png?width=1440&height=467"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818135045033295872/gdtoken.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bulette.mp3?v=1.123.0"
+			},
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Rhoa",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 7,
+			"cha": 5,
+			"save": {
+				"con": "+5"
+			},
+			"passive": 8,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 ({@damage 2d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Relentless (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/726545054017126401/818134973214752828/1AyaWQi.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818138527476482088/rhoatoken.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-boar.mp3?v=1.123.0"
+			},
+			"traitTags": [
+				"Charge"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Giant Rhoa",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 17,
+			"int": 2,
+			"wis": 7,
+			"cha": 5,
+			"save": {
+				"con": "+5",
+				"str": "+7"
+			},
+			"passive": 8,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 ({@damage 2d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Relentless (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/726545054017126401/818134973214752828/1AyaWQi.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818138527476482088/rhoatoken.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-boar.mp3?v=1.123.0"
+			},
+			"traitTags": [
+				"Charge"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Einhar",
+			"source": "MJAMESM",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Monstruosity Leather Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 18,
+			"int": 13,
+			"wis": 19,
+			"cha": 11,
+			"save": {
+				"dex": "+10",
+				"str": "+7",
+				"wis": "+9"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"animal handling": "+9",
+				"perception": "+9",
+				"survival": "+14",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"(plus 2 additional languages)"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Innate Spellasting",
+					"headerEntries": [
+						"The ranger's innate spellcasting ability is Wisdom (spell save {@dc 17}. It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell freedom of movement}",
+							"{@spell guardian of nature|XGE}",
+							"{@spell swift quiver}",
+							"{@spell teleportation circle}",
+							"{@spell wind wall}"
+						],
+						"3e": [
+							"{@spell fog cloud}",
+							"{@spell lesser restoration}",
+							"{@spell misty step}",
+							"{@spell silence}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Distant Strike",
+					"entries": [
+						"On his turn the ranger can teleport up to 10 feet before one of his attack to an unoccupied space he can see. He can use this once in each of his turns."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The ranger has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The ranger's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ranger makes two heavy crossbow attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Heavy Crossbow - Red Bolts",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage. All creatures in line from the attack have to make a Dexterity Saving Thrown {@dc 17} to avoid the piercing red bolts."
+					]
+				},
+				{
+					"name": "Heavy Crossbow -  White Bolts",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h} 20 ({@damage 2d8 + 5}) force damage. This attack ignores cover and strong wind."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Fleet of Foot",
+					"entries": [
+						"Einhar can use the Dash action as a bonus action on your turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/726545054017126401/818119434375397386/kgv1pb2GnAZX1mNlSMbGHOE6THudJD2EGdy3Fxi6.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818131321326927922/einhartoken.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"spellcastingTags": [
+				"CR",
+				"I"
+			],
+			"miscTags": [
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Doguito",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 189,
+				"formula": "18d10 + 90"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 20,
+			"int": 3,
+			"wis": 6,
+			"cha": 8,
+			"save": {
+				"str": "+8",
+				"con": "+9"
+			},
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"cr": "12",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Doguito makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) piercing damage. If the target is Medium or smaller, the target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage. If the target is {@condition prone} an additional 7 ({@damage 2d6}) bludgeoning damage is dealt to the target."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Bloody Rampage",
+					"entries": [
+						"When Doguito takes damage, it makes one attack with its claws against a random creature within its reach, other than its master."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"I suspect gray renders owe their origin to the neogi, since they are often in their company. Those that appear in the wilderness are likely castaways from frustrated neogi masters."
+										],
+										"by": "Mordenkainen"
+									},
+									{
+										"type": "entries",
+										"name": "Gray Render",
+										"entries": [
+											"A curious impulse drives the gray render. Despite its hulking form and terrible appetite, it wants most of all to bond with an intelligent creature and, once bonded, give its life to protect that creature. Great strength and a savage nature enable gray renders to be fierce guardians, but they lack even a shred of cunning."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Spreading Plague",
+										"entries": [
+											"Gray renders reproduce by forming nodules on their bodies that, upon reaching maturity, break off to begin life as young gray renders. These monstrosities feel no obligation to their young, and they have no inclination to gather with others of their kind."
+										]
+									},
+									{
+										"name": "Chaotic Allies",
+										"type": "entries",
+										"entries": [
+											"As a side effect of its breeding, each gray render has an overpowering need to bond with an intelligent creature. When it encounters a suitable master, the render sings to it—a weird, warbling cry accompanied by scratching at the earth and a show of deference. Once it forms the bond, the render serves its master in all things.",
+											"Although this bond can be a great benefit, renders are inherently chaotic. In a battle, a render fights with all the savagery it can muster and never willingly harms its master, but outside battle, a gray render might present considerable difficulty for its master's associates. It might follow its master even after being told to stay put, destroy its master's house, burrow holes in the side of a ship, kill horses, attack when it feels jealous, and more. A gray render might be a boon companion, but it is always an unpredictable one.",
+											"The Gray Render Quirks table presents possible quirks for gray renders that can be generated randomly or selected as desired.",
+											{
+												"type": "table",
+												"caption": "Grey Render Quirk",
+												"colLabels": [
+													"d12",
+													"Quirk"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-10"
+												],
+												"rows": [
+													[
+														1,
+														"Hates horses and other mounts or pets"
+													],
+													[
+														2,
+														"Roars loudly when its bonded creature is touched by another creature"
+													],
+													[
+														3,
+														"Likes to snuggle"
+													],
+													[
+														4,
+														"Uproots and chews on trees"
+													],
+													[
+														5,
+														"Has terrific and eye-watering flatulence"
+													],
+													[
+														6,
+														"Brings offerings of meat to its bonded creature"
+													],
+													[
+														7,
+														"Compulsively digs up the ground"
+													],
+													[
+														8,
+														"Attacks carts and wagons as if they were terrible monsters"
+													],
+													[
+														9,
+														"Howls when it rains"
+													],
+													[
+														10,
+														"Whines piteously in the dark"
+													],
+													[
+														11,
+														"Buries treasure it finds"
+													],
+													[
+														12,
+														"Chases birds, leaping into the air to catch them, heedless of the destruction it causes"
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/726545054017126401/818149175140548618/487d3fdcca96dbc54b28a541bd734428.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818149976541888512/dogotok.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/gray-render.mp3?v=1.123.0"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Fire Kong",
+			"shortName": "Kong",
+			"source": "MJAMESM",
+			"page": 284,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 133,
+				"formula": "14d10 + 56"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 21,
+			"dex": 16,
+			"con": 18,
+			"int": 6,
+			"wis": 14,
+			"cha": 8,
+			"save": {
+				"wis": "+5",
+				"con": "+7"
+			},
+			"skill": {
+				"perception": "+5",
+				"survival": "+5",
+				"athletics": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"understands Draconic but can't speak"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The reverser has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The reverser makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, range 5 ft., one creature. {@h}11 ({@damage 1d12 + 5}) piercing damage plus 6 ({@damage 1d12}) force damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage plus 7 ({@damage 2d6}) force damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reversal",
+					"entries": [
+						"When a creature the reverser can see within 30 feet of it regains hit points, the reverser reduces the number of hit points regained to 0, and the reverser deals 13 ({@damage 3d8}) force damage to the creature."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"A reverser is a terrible foe in melee, laying into other creatures with teeth and claw. But the chaos it imposes is more fearful by far, as its enemies' healing magic are unraveled and turned against them."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							"Brought to life by mages in the flying city of Aeor during the Age of Arcanum, Aeorian hunters were created to take on angels, demons, devils, fey, and the gods themselves. When Aeor crashed into Eiselcross, many of these magically mutated monstrosities survived, and they now stalk Aeor's ruins and the islands' icy wastes.",
+							{
+								"type": "entries",
+								"name": "Created by Experimentation",
+								"entries": [
+									"Aeorian hunters were created through arcane experimentation on beasts and humanoids—both captives and volunteers. These experiments resulted in monstrosities with brightly colored flesh and the power to resist and destroy Aeor's enemies. It is theorized that the mages of Aeor must have possessed some means of controlling their monstrous soldiers, but no such device has yet been found in the wastes of Eiselcross. Draconic was the language used by these mages to train and bind the Aeorian hunters, and the hunters retain an understanding of this language even though they can't speak it.",
+									{
+										"type": "entries",
+										"name": "Madness through Immortality",
+										"entries": [
+											"Aeorian hunters do not age. As such, the lust for violence their creators instilled in their minds has grown ravenous after centuries without war. Most immediately attack any creature they see.",
+											{
+												"type": "entries",
+												"name": "Never Harm Another Hunter",
+												"entries": [
+													"Though they crave violence, Aeorian hunters have never been seen attacking each other. Most scholars believe that Aeor's mages must have enchanted this behavior into them, given the cost in gold and magic required to create each hunter. Some adventurers in Eiselcross boast about sneaking past Aeorian hunters using disguises or illusions to mimic a hunter's form, but these are most likely tall tales."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Ageless Memories",
+												"entries": [
+													"Each Aeorian hunter has perfect recall of every experience since the moment of its creation. Their limited intellects and desire for violence prevent them from effectively communicating, but each hunter holds a wealth of knowledge—often including the location of rare Aeorian relics—inside its mind."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Perfect Soldiers",
+												"entries": [
+													"Aeorian hunters don't require food or drink."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/726545054017126401/818142201494110298/296.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818150690303901766/macacaotok.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"O",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
