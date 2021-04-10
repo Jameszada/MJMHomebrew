@@ -1,0 +1,1409 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MJAMESM",
+				"abbreviation": "MJM",
+				"full": "Magnificent's James Mansion",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1616340264,
+		"dateLastModified": 1616340264
+	},
+	"monster": [
+		{
+			"name": "Ground Digger",
+			"shortName": "Digger",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "H",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"carapaça pesadona"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d20 + 75",
+				"average": 232
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 60
+			},
+			"str": 22,
+			"dex": 11,
+			"con": 21,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"save": {
+				"con": "+9",
+				"str": "+10"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				},
+				{
+					"resist": [
+						"fire",
+						"poison"
+					]
+				}
+			],
+			"conditionImmune": [
+				"deafened",
+				"prone"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The digger can make two attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}30 ({@damage 4d12 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, reach 60/120 ft., one target. {@h}30 ({@damage 3d10 + 6}) bludgeoning damage and ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Swallow {@recharge 5}",
+					"entries": [
+						"The digger can attempt to swallow a creature that is in range of his bite attack. The creature can make a Dexterity Saving Throw {@dc 16}. In a failiure, the creature is considered {@condition grappled} and {@condition restrained} and takes ({@damage 3d8 + 6}) piercing damage and ({@damage 6d6}) acid damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Opportunistic Assault",
+					"entries": [
+						"As a bonus action, the digger can move up to its speed toward a hostile creature that is {@condition prone} and the digger can sense it and make a bite attack"
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://media.discordapp.net/attachments/726545054017126401/818134427606712330/b169ea168344757c3891748e87a25d98bb1346fb.png?width=1440&height=467"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818135045033295872/gdtoken.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bulette.mp3?v=1.123.0"
+			},
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Rhoa",
+			"shortName": "Rhoa",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "M",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 7,
+			"cha": 5,
+			"save": {
+				"con": "+6"
+			},
+			"passive": 8,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 ({@damage 2d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Relentless (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the boar takes 20 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/39S1JF8.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/aZWykAU.png",
+			"traitTags": [
+				"Charge"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Giant Rhoa",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d12 + 42",
+				"average": 133
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 17,
+			"int": 2,
+			"wis": 7,
+			"cha": 5,
+			"save": {
+				"con": "+6",
+				"str": "+8"
+			},
+			"skill": {
+				"athletics": "+8",
+				"survival": "+1"
+			},
+			"passive": 8,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the rhoa moves at least 20 feet straight toward a target and then hits it with a buthead attack on the same turn, the target takes an extra 14 ({@damage 4d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Relentless (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the boar takes 30 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Buthead",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/39S1JF8.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/aZWykAU.png",
+			"traitTags": [
+				"Charge"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Einhar",
+			"source": "MJAMESM",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Monstruosity Leather Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 18,
+			"int": 13,
+			"wis": 19,
+			"cha": 11,
+			"save": {
+				"dex": "+10",
+				"str": "+7",
+				"wis": "+9"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"animal handling": "+9",
+				"perception": "+9",
+				"survival": "+14",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"(plus 2 additional languages)"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Innate Spellasting",
+					"headerEntries": [
+						"The ranger's innate spellcasting ability is Wisdom (spell save {@dc 17}. It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell freedom of movement}",
+							"{@spell guardian of nature|XGE}",
+							"{@spell swift quiver}",
+							"{@spell teleportation circle}",
+							"{@spell wind wall}"
+						],
+						"3e": [
+							"{@spell fog cloud}",
+							"{@spell lesser restoration}",
+							"{@spell misty step}",
+							"{@spell silence}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Distant Strike",
+					"entries": [
+						"On his turn the ranger can teleport up to 10 feet before one of his attack to an unoccupied space he can see. He can use this once in each of his turns."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The ranger has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The ranger's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ranger makes two heavy crossbow attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Heavy Crossbow - Red Bolts",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage. All creatures in line from the attack have to make a Dexterity Saving Thrown {@dc 17} to avoid the piercing red bolts."
+					]
+				},
+				{
+					"name": "Heavy Crossbow -  White Bolts",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 150/600 ft., one target. {@h} 20 ({@damage 2d8 + 5}) force damage. This attack ignores cover and strong wind."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Fleet of Foot",
+					"entries": [
+						"Einhar can use the Dash action as a bonus action on your turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/726545054017126401/818119434375397386/kgv1pb2GnAZX1mNlSMbGHOE6THudJD2EGdy3Fxi6.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818131321326927922/einhartoken.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"spellcastingTags": [
+				"CR",
+				"I"
+			],
+			"miscTags": [
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Doguito",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 189,
+				"formula": "18d10 + 90"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 20,
+			"int": 3,
+			"wis": 6,
+			"cha": 8,
+			"save": {
+				"str": "+8",
+				"con": "+9"
+			},
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"cr": "12",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Doguito makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) piercing damage. If the target is Medium or smaller, the target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage. If the target is {@condition prone} an additional 7 ({@damage 2d6}) bludgeoning damage is dealt to the target."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Bloody Rampage",
+					"entries": [
+						"When Doguito takes damage, it makes one attack with its claws against a random creature within its reach, other than its master."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"I suspect gray renders owe their origin to the neogi, since they are often in their company. Those that appear in the wilderness are likely castaways from frustrated neogi masters."
+										],
+										"by": "Mordenkainen"
+									},
+									{
+										"type": "entries",
+										"name": "Gray Render",
+										"entries": [
+											"A curious impulse drives the gray render. Despite its hulking form and terrible appetite, it wants most of all to bond with an intelligent creature and, once bonded, give its life to protect that creature. Great strength and a savage nature enable gray renders to be fierce guardians, but they lack even a shred of cunning."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Spreading Plague",
+										"entries": [
+											"Gray renders reproduce by forming nodules on their bodies that, upon reaching maturity, break off to begin life as young gray renders. These monstrosities feel no obligation to their young, and they have no inclination to gather with others of their kind."
+										]
+									},
+									{
+										"name": "Chaotic Allies",
+										"type": "entries",
+										"entries": [
+											"As a side effect of its breeding, each gray render has an overpowering need to bond with an intelligent creature. When it encounters a suitable master, the render sings to it—a weird, warbling cry accompanied by scratching at the earth and a show of deference. Once it forms the bond, the render serves its master in all things.",
+											"Although this bond can be a great benefit, renders are inherently chaotic. In a battle, a render fights with all the savagery it can muster and never willingly harms its master, but outside battle, a gray render might present considerable difficulty for its master's associates. It might follow its master even after being told to stay put, destroy its master's house, burrow holes in the side of a ship, kill horses, attack when it feels jealous, and more. A gray render might be a boon companion, but it is always an unpredictable one.",
+											"The Gray Render Quirks table presents possible quirks for gray renders that can be generated randomly or selected as desired.",
+											{
+												"type": "table",
+												"caption": "Grey Render Quirk",
+												"colLabels": [
+													"d12",
+													"Quirk"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-10"
+												],
+												"rows": [
+													[
+														1,
+														"Hates horses and other mounts or pets"
+													],
+													[
+														2,
+														"Roars loudly when its bonded creature is touched by another creature"
+													],
+													[
+														3,
+														"Likes to snuggle"
+													],
+													[
+														4,
+														"Uproots and chews on trees"
+													],
+													[
+														5,
+														"Has terrific and eye-watering flatulence"
+													],
+													[
+														6,
+														"Brings offerings of meat to its bonded creature"
+													],
+													[
+														7,
+														"Compulsively digs up the ground"
+													],
+													[
+														8,
+														"Attacks carts and wagons as if they were terrible monsters"
+													],
+													[
+														9,
+														"Howls when it rains"
+													],
+													[
+														10,
+														"Whines piteously in the dark"
+													],
+													[
+														11,
+														"Buries treasure it finds"
+													],
+													[
+														12,
+														"Chases birds, leaping into the air to catch them, heedless of the destruction it causes"
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/726545054017126401/818149175140548618/487d3fdcca96dbc54b28a541bd734428.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/726545054017126401/818149976541888512/dogotok.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/gray-render.mp3?v=1.123.0"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Fire Kong",
+			"shortName": "Kong",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 64",
+				"average": 168
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 21,
+			"dex": 16,
+			"con": 18,
+			"int": 6,
+			"wis": 14,
+			"cha": 8,
+			"save": {
+				"wis": "+5",
+				"con": "+7",
+				"str": "+8"
+			},
+			"skill": {
+				"perception": "+5",
+				"survival": "+5",
+				"athletics": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Manky"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Kong has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kong makes three attacks: one with its bite and two with its club. It can use two attacks to use a throwing anything attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, range 5 ft., one creature. {@h}11 ({@damage 1d12 + 5}) piercing damage plus 6 ({@damage 1d12}) fire damage."
+					]
+				},
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d6 + 5}) bludgeoning damage plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Throwing Anything",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/60 ft., variable. {@h}22 ({@damage 4d10}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Warm Sucker",
+					"entries": [
+						"When a creature Kong can see within 30 feet of it regains hit points, he reduces the number of hit points regained to 0 and deals 13 ({@damage 2d8}) cold damage to the creature.",
+						"If the target was colded more than once, it can make a {@dc 14} Constitution Saving Thrown. If it fails, he gains one point of {@condition exhaustion}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/X9NmNss.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/84uWdjX.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tentacle Miscreation",
+			"shortName": "Miscreation",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 20",
+				"average": 75
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 13,
+			"dex": 17,
+			"con": 15,
+			"int": 6,
+			"wis": 11,
+			"cha": 7,
+			"save": {
+				"dex": "+6",
+				"con": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"psychic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"Deep Speech"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Miscreation can make 3 attack with his tentacles spikes and/or his claws. It can use the Spine Volley if available."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tentacle Spikes",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, range 30/60 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft. , one target. {@h}4 ({@damage 1d8 + 3}) piercing damage and {@h}7 ({@damage 2d6}) poison damage if the target fails in a {@dc 14} Constitution saving thrown or half on a success."
+					]
+				},
+				{
+					"name": "Spine Voley {@recharge 5}",
+					"entries": [
+						"The miscreation shoots a lot of spine bones in a 60 foot cone in front of it. Each creature that it aims in the area must make a {@dc 14} Dexterity saving throw taking {@h}20 ({@damage 8d4}) piercing damage on a failed save, or half as much on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"mountain"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/hegKKXF.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/rSCQpdN.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"DS"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Blood Elemental",
+			"shortName": "Elemental",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 15,
+			"int": 6,
+			"wis": 11,
+			"cha": 7,
+			"save": {
+				"str": "+6",
+				"con": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				},
+				{
+					"resist": [
+						"fire",
+						"psychic"
+					]
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Deep Speech"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Stinky Blood",
+					"entries": [
+						"The smell and the environment that the elemental provides makes everyone more and more queasy and sick. In a 10-foot aura of the elemental, each creature that starts its turn within the aura of the elemental has to make a {@dc 13} Constitution Saving Throw. If the target fails, he must spend his action vomiting and feeling ill, making it impossible to do another thing."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Blood Elemental can make 2 attack with his arms. It can use the Bloddy Extract if available."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bloody Extract",
+					"entries": [
+						"The blood elemental can enter in another creature's space. If the target has already received some kind of wound, the elemental can extract the blood of this creature. The target must make a {@dc 15} Constitution saving throw. If it fails, the target takes necrotic damage from 3 hit dice rolls from the target, which are consumed and healed by the elemental. Upon passing the saving, the target takes half this damage and only loses 1 hit die."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5bC7U43.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/6CTpWWk.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"DS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Strixz",
+			"shortName": "Strixz",
+			"source": "MJAMESM",
+			"page": 101,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"drow"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item drow +1 studded leather armor|mm}"
+					]
+				},
+				{
+					"ac": 25,
+					"from": [
+						"armor & shield spell"
+					],
+					"condition": "when uses Shield"
+				}
+			],
+			"hp": {
+				"formula": "25d8 + 100",
+				"average": 212
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 50
+			},
+			"str": 15,
+			"dex": 25,
+			"con": 18,
+			"int": 18,
+			"wis": 13,
+			"cha": 18,
+			"save": {
+				"dex": "+13",
+				"con": "+10",
+				"wis": "+7",
+				"int": "+10"
+			},
+			"skill": {
+				"acrobatics": "+19",
+				"athletics": "+14",
+				"deception": "+16",
+				"history": "+10",
+				"investigation": "+16",
+				"stealth": "+19",
+				"survival": "+7",
+				"persuasion": "+16",
+				"perception": "+13",
+				"sleight of hand": "+19",
+				"arcana": "+10",
+				"insight": "+7"
+			},
+			"senses": [
+				"truesight 60 ft.",
+				"blindsight 30 ft."
+			],
+			"passive": 23,
+			"resist": [
+				{
+					"resist": [
+						"fire",
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Undercommon",
+				"Abyssal"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Strixz's innate spellcasting ability is Intelligence (spell save {@dc 21}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell alter self}",
+						"{@spell blink}",
+						"{@spell darkness}",
+						"{@spell disguise self}",
+						"{@spell mage hand}",
+						"{@spell web}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Strixz is an 20th-level arcane trickster. Its spellcasting ability is Intelligence (spell save {@dc 21}, +13 to hit with spell attacks). He has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell booming blade|TCE}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell false life}",
+								"{@spell magic missile}",
+								"{@spell ray of sickness}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell ray of enfeeblement}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell haste}",
+								"{@spell nondetection}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell banishment}",
+								"{@spell blight}",
+								"{@spell confusion}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, the strixz deals an extra ({@dice 10d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the strixz that isn't {@condition incapacitated} and the strixz doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the strixz is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the strixz instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Arcane Ambusher",
+					"entries": [
+						"The strixz has advantage on attack rolls against any creature it has surprised. Also if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn."
+					]
+				},
+				{
+					"name": "Arcane Combatent",
+					"entries": [
+						"Strixz can make one dagger or scimitar attack and cast one spell as part of her attack action"
+					]
+				},
+				{
+					"name": "Mobile",
+					"entries": [
+						"You are exceptionally speedy and agile. You gain the following benefits:",
+						"*Your speed increases by 10 feet.",
+						"*When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn.",
+						"*When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the strixz knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Improvement Web Walker",
+					"entries": [
+						"The strixz ignores movement restrictions caused by webbing. Additionaly, strixz is on effect of the spell Freedom of Moviment while she is inside a web terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, range 5 ft., one creature. {@h}11 ({@damage 1d4 + 7}) piercing damage plus 6 ({@damage 4d6}) poison damage."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}24 ({@damage 1d8 + 7}) slashing damage plus 6 ({@damage 4d6}) poison damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Steady Aim",
+					"entries": [
+						"As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spell Theft",
+					"entries": [
+						"Immediately after a creature casts a spell that targets or include Strixz or any other creature it can see, he can use his reaction to force the caster to make a {@dc 20} saving throw with its spellcasting ability modifier. If it fails the spell is negated, the slot is spent and the creature loses the knowledge of the spell for 8 hours, becoming unable to cast it. Strixz can cast this spell once without spending a spell slot."
+					]
+				},
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker that Strixz can see hits he with an attack, he can use his reaction to halve the attack's damage against you."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/EZ2pUM4.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/SFb2uxU.png",
+			"traitTags": [
+				"Sneak Attack",
+				"Web Sense"
+			],
+			"senseTags": [
+				"B",
+				"U"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CW",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
+		}
+	]
+}
