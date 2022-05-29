@@ -1,0 +1,3717 @@
+{
+	"siteVersion": "1.155.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "QuaresmaMal-Assombrada",
+				"abbreviation": "QMA",
+				"full": "Quaresma Mal-Assombrada",
+				"url": "https://raw.githubusercontent.com/Jameszada/MJMHomebrew/main/QMA",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1653861940,
+		"dateLastModified": 1653861940
+	},
+	"monster": [
+		{
+			"name": "Almoa",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "13d8",
+				"average": 58
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 11,
+			"int": 12,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"bludgeoning"
+					],
+					"note": "from magical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"all languages it knew in life"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The alamoa's innate spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). The alamoa can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell disguise self}",
+						"{@spell minor illusion}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell fog cloud}",
+							"{@spell major image}",
+							"{@spell sleet storm}"
+						],
+						"1e": [
+							"{@spell call lightning}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"One humanoid the undead can see within 30 feet of it must succeed on a {@dc 15} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys the undead's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this undead's Charm for the next 24 hours.",
+						"The undead can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Quando chega a tempestade e a visibilidade se torna difícil, viajantes próximos a rios, lagoas e mares não sabem, mas correm terrível perigo. Grandes fontes de água são lares das Alamoas, humanóides que morreram afogados nates de viverem um grande amor.",
+					"Essas amarguradas criaturas esqueléticas às vezes retomam a sua antiga aparência e enganam viajantes que acabam se tornando presas de seu desejo incompleto de viver.",
+					"Amargura Eterna: Alamoas são criaturas consumidas pelo amargo que suas vidas incompletas lhe trouxeram. ",
+					"Elo Maldito: Incapazes de viver longe do local onde se afogaram, elas criam seus covis em cavernas, ruinas ou cabanas abandonadas próximas de onde deram seu último sopro de vida.",
+					"Busca Patética: O desejo por vida deixa essas criaturas especialmente sedentas por seres apaixonados. Alamoas também sentem especial desejo por vítimas que se pareçam com alguém que amaram em vida mas que, por algum motivo, foram impedidas de viver este amor. Estes alvos são os preferidos da Alamoa para o uso de ilusões que levem a vítima ao covil da vil criatura."
+				]
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"L"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed"
+			]
+		},
+		{
+			"name": "Anhangá",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "18d10 + 90",
+				"average": 189
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 22,
+			"con": 20,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"str": "+8",
+				"con": "+10",
+				"wis": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 18,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"fire",
+						"lightning"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The anhanga's innate spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). The anhanga can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell detect magic}",
+						"{@spell dispel magic}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell hold monster}",
+							"{@spell polymorph}",
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The anhangá has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The anhangá's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the anhangá can take the {@action Hide} action as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The anhanga makes two claw attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) slashing damage plus 17 ({@damage 5d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}25 ({@damage 3d10 + 9}) piercing damage plus 17 ({@damage 5d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Possession {@recharge 6}",
+					"entries": [
+						"One humanoid, giant or beast that the anhanga can see within 5 feet of it must succeed on a {@dc 17} Charisma saving throw or be possessed by the anhanga; the anhanga then disappears, and the target is {@condition incapacitated} and loses control of its body. The anhanga now controls the body but doesn't deprive the target of",
+						"awareness. The anhanga can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+						"The possession lasts until the body drops to 0 hit points, the anhanga ends it as a bonus action, or the anhanga is turned or forced out by an effect li ke the dispel evil and good spell. When the possession ends, the anhanga reappears in an unoccupied space within 5 feet of the body. The target is immune to this anhanga's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"The anhanga magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Os Anhangás são crias do Lorde Demônio Yurupari, O Demônio das Mil Formas e Príncipe da Boca Retorcida. Yurupari vive no reino da escuridão, o 323º nadar do Abismo. Sábios discuutem se os planos do lorde demônio ao criar os anhangás era fornecer tropas para a Guerra Sangrenta ou algum objetivo obscuro num umndo primário. O certo é que os criou como assassinos, guerreiros e manipuladores.",
+					"No começo das eras, todos os anhangás serviam Yurupari, mas a naturerza caótica e vil desses demônios durante as eras fez com que se espalhassem pelo plano e trabalhassem com outros seres poderosos, ou apenas para si mesmos. Um balor tem 50% de chance de invocar um anhangá",
+					"Quando convocados no mundo primário, Anhangás se ressentem de serem obrigados a servir o conjurador e, se encontram oportunidade, o traem e o devoram, consumindo sua alma para sempre.",
+					"Anhangás tem o poder de possuir diversas criaturas, além de poderem se metamorfosear, o que usam em suas táticas de manipulação e espionagem. sua forma verdadeira é a de uma criatura de pele grossa e escura, com olhos vermelhos e envolta num manto de sombras"
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Larva.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Boi Vaquim",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 32",
+				"average": 76
+			},
+			"speed": {
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 8,
+			"wis": 12,
+			"cha": 16,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"fire",
+						"lightning"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Celestial",
+				"but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the boi vaquim moves at least 20 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 12 ({@dice 4d4 + 4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the boi vaquim can make a hooves attack with your bonus action."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The boi vaquim has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Horns",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) piercing damage plus ({@damage 4d6}) fire damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"As verdejantes e, quase sempre, ensolaradas pradarias são o habitat de uma criatura majestosa cuja simples menção ao nome atiça a curiosidade e a cobiça de muitos, o indomável boi vaquim. Poucos são aqueles que garantem ter encontrado esses seres e raríssimos os que puderam confirmar essa afirmação.",
+					"Tesouro Vivo: A aparência do boi vaquim é a de um enorme touro medindo quase três metros de altura e quatro de comprimento. Sua pelagem é totalmente branca e o couro, muito resistente. Mas as características mais marcantes e que literalmente cintilam à vista são as vigorosas asas e o feitio de seus enormes e pontiagudos chifres flamejantes, ambos feitos de resplandecente ouro. Seus olhos vítreos são do mais precioso diamante.",
+					"Do Boi se Usa Tudo: A carne do boi vaquim é extremamente saborosa, não apodrece e é uma iguaria vista em poucos banquetes. Cada pena das asas tem o mesmo peso de uma moeda de ouro mas costuma valer bem mais pela sua raridade. Os chifres, também de puro ouro, são disputados para a confecção de varinhas mágicas que lidem com fogo. Os olhos são a base de muitos itens que fornecem visão verdadeira. O couro, nunca desgasta e pode ser aproveitado na confecção de armaduras resistentes à perfuração.",
+					"O Ouro que Vagueia: São animais solitários e apesar de toda a força e ferocidade da espécie, o boi vaquim não costuma atacar se não for incomodado, preferindo alçar voo para pastos mais verdes sem a presença de seres que possam atazaná-lo. Aventureiros não costumam ter o mesmo bom senso e caçam-no para provar sua coragem ou transformar seu valioso corpo em bens materiais. Quando acuado, o plácido ruminante se transfigura em uma fúria atropeladora e se vale de cabeçadas mortais e coices que fraturam ossos. As chamas em seus chifres se avivam e um fulgurar emana dos globos oculares.",
+					"Origem Divina: As lendas contam que o boi vaquim foi criado por uma divindade ligada à agricultura e pecuária. O rebanho majestoso era sua maior criação e fonte de muito orgulho. Algo tão fantástico não existe sem despertar inveja, não se sabe com certeza o responsável, o que se sabe é que certo dia, alguém partiu a cerca que mantinha o rebanho sob controle, liberando nos planos de existência o precioso tesouro de chifres.",
+					"Maldição Bovina: Não se desiste facilmente de um rebanho tão valioso e seu dono original se esforça para reuni-lo, até hoje. Cada exemplar foi marcado por suas mãos e por eras têm sido reunidos e enviados para seu plano original, as Terras Ferais. Cada boi é único e amado pelo seu dono. Reduzir um ser tão sublime a um mero item desperta sua ira e animais de criação costumam atacar os portadores desses itens. Nem mesmo o mais bravo guerreiro se mantém firme ante a fúria de centenas de galinhas."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Charge",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CE",
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Boitatá",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d20 + 105",
+				"average": 262
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 25,
+			"dex": 20,
+			"con": 24,
+			"int": 17,
+			"wis": 17,
+			"cha": 20,
+			"save": {
+				"con": "+12",
+				"cha": "+10"
+			},
+			"skill": {
+				"insight": "+8",
+				"perception": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 30 ft."
+			],
+			"passive": 18,
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Ignan",
+				"Sylvan"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Fire Aura",
+					"entries": [
+						"A creature within 10 feet of a Boitata must make a {@dc 20} Constitution saving throw, taking 14 ({@damage 4d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Boitata makes three attacks: one with its bite, one with its tail and one with its fire rays."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage plus 14 ({@damage 4d6}) fire damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage plus 14 ({@damage 4d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Rays",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 60 ft., one target. {@h}19 ({@damage 4d6+5}) fire damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Nem todas as Salamanders foram escravizadas pelos Efrettis. Algumas se tornaram nômades, fugindo para regiões desérticas ou esconderijos no Plano Elemental do Fogo. Seguindo seus nobres ou fazendo seu próprio destino, acreditavam que qualquer coisa é melhor do que a escravidão compulsória. Umas poucas tribos fugitivas acabaram encontrando uma espécie de dragão terrível e poderosa. O Boitata.",
+					"Boitatás têm a forma de Fire Snakes, porém de tamanho gigantesco e olhos de fogo que irradiam uma inteligência maligna. Suas escamas parecem placas de magma e labaredas de fogo saem de seu corpo atingindo grandes alturas e turvando a visão de quem os observa. Seus olhos incandescentes cospem raios de fogo atingindo inimigos a distância, enquanto os mais próximos ardem em sua aura de fogo ou são dilacerados por suas presas e esmagados por sua cauda.",
+					"Territorialistas: Boitatás não suportam a existência de qualquer criatura que desafie seu poder. Seu território é seu reino e exclusivamente seu. Apenas seus servos diretos o podem habitar, mediante ao cumprimento de suas ordens e ao pagamento de tributos. ",
+					"Filhos do sol: Boitatás acreditam serem filhos do sol, sendo reis por nascimento e donos de todo território onde a luz pode alcançar. Solitários, se acasalam apenas uma única vez em vida, gerando até uma dúzia de ovos, porém apenas um deles será escolhido para sobreviver, sendo os mais fracos devorados para não enfraquecer a espécie. O fogo é força e perfeição. A imperfeição não merece existir."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png",
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"IG",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Boto",
+			"source": "QuaresmaMal-Assombrada",
+			"page": 164,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 60
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 15,
+			"int": 16,
+			"wis": 17,
+			"cha": 21,
+			"save": {
+				"dex": "+8",
+				"cha": "+8"
+			},
+			"skill": {
+				"deception": "+8",
+				"persuasion": "+8",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft.,",
+				"blindsight 30 ft."
+			],
+			"passive": 16,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't silvered"
+				}
+			],
+			"languages": [
+				"Common",
+				"Aquan",
+				"Sylvan"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The boto's innate spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks). The boto can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell minor illusion}",
+						"{@spell speak with animals}  (dolphins only)",
+						"{@spell vicious mockery}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell detect magic}",
+							"{@spell invisibility}",
+							"{@spell major image}",
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Blind Senses",
+					"entries": [
+						"The boto can only use its blindsight while underwater."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The boto can use its action to polymorph into a small or medium humanoid or into a dolphin, its true form. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Boto makes two attacks."
+					]
+				},
+				{
+					"name": "Unnarmed Strike (Humanois form only)",
+					"entries": [
+						"{@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite (Dolphin form only)",
+					"entries": [
+						"{@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"One humanoid the boto can see within 30 feet of it must succeed on a {@dc 16} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys the boto's verbal commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this boto's Charm for the next 24 hours.",
+						"The boto can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Grandes rios, lagos e regiões costeiras são o habitat natural do boto. Essa misteriosa criatura tem hábitos noturnos e é especialmente atraído pelas feiras e festas de populações humanóides residentes perto das águas que habita. ",
+					"Em sua forma animal, o boto se parece com o animal de mesmo nome ou com um golfinho, tendo sua cor variando tanto quanto a destes mamíferos. Porém, o boto é também um metamorfo, adotando a forma de qualquer humanóide e assim se misturando aos povoados e vilas sem levantar qualquer suspeita, pois segundo a lenda a única forma de distinguir um boto de um humanóide seria através de um pequeno orifício na cabeça, normalmente difarçado com cabelo, chapéus ou lenços.",
+					"Individualistas: Botos não vivem em bando, raramente tendo mais que um de sua espécie habitando a mesma região. Sua interação social é apenas com as populações litorâneas e ribeirinhas, que o boto considera intrigantes e divertidas. Alguns botos, porém, fazem desta interação algo além de social, usando de seus poderes de persuasão e ilusão para não apenas iludir, mas para devorar os humanóides que parecerem presas fáceis, normalmente se aproveitando da agitação das festas e também da proteção que o manto noturno confere. ",
+					"Belos e sedutores: Botos não são apenas atraídos pela curiosidade. Incapazes de gerar descendência no acasalamento com sua própria espécie, botos utilizam de relação com humanóides para gerar sua prole. Assim moças e rapazes caem nos jogos ardilosos da criatura que, no caso das mulheres, as abandona grávidas, só retornando quando a cria já atinge a adolescência e os primeiros sinais de sua ancestralidade metamorfa começam a aparecer. Quando a vítima é masculina, após a gestação o bebê boto é deixado aos cuidados, ora do pai, ora de uma família que aparente ser um bom lar, com a mãe voltando para buscar sua cria na adolescência. O jovem boto fica aos cuidados do seu parente metamorfo por alguns anos, aprendendo sua história e cultura por meios orais até estar pronto para viver por conta própria."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png",
+			"traitTags": [
+				"Shapechanger"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Cabra-Cabriola",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 33",
+				"average": 93
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 13,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"str": "+7",
+				"con": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't silvered"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Infernal"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The cabriola's innate spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell faerie fire}",
+						"{@spell jump}",
+						"{@spell minor illusion}"
+					],
+					"daily": {
+						"1": [
+							"{@spell phantasmal killer}"
+						],
+						"3e": [
+							"{@spell fear}",
+							"{@spell fog cloud}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cabriola makes two claw attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage plus {@h}3 ({@damage 1d6}) psychic damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"É dito pelos estudiosos e também pelos mais velhos que a Cabra-Cabriola é a materialização do medo e do pesadelo encarnada por um espírito demoníaco. Quando os aledões sofrem nas mãos de um tirano e não tem coragem para reagir, quando são atacados por uma criatura misteriosa que lhes ataca animais e pessoas, quando a ameaça da guerra lhes perturba o sono: o terror materializa-se na forma da Cabra-Cabriola. Segundo a lenda, o simples toque de uma Cabriola causa dores de cabeça terríveis.",
+					"A Cabriola após ser criada se alimenta não só do medo, dos pesadelos, mas da carne de filhotes, novilhos, cabritos e também de crianças. Seu nome deriva de seus chifres que se parecem com os de uma cabra, do alto de seu corpo humanóide de 4 metros de altura, coberto por pelos negros, olhos negros sem íris ou pupilas, presas afiadas como as de um tubarão em sua boca larga e comprida, que foge do rosto como a bocarra de um lobo. Seus braços fortes terminam em mãos com 4 dedos em pares opostos, com pontas que lembram cascos tão duros quanto a rocha, cheios de ranhuras. Suas pernas tem os joelhos invertidos e terminam em grandes cascos de cabra.",
+					"Terror noturno: A Cabriola é conhecida por atacar nos vilarejos a noite para saciar sua fome de carne, de sangue ou de medo. Os anciões de um vilarejo que já tenha sido atacado pela criatura muitas vezes cantam canções como a que segue, para que as crianças não se aventurem nas ruas e não se tornem novas vítimas da Cabriola.",
+					"\" Eu sou a Cabra Cabriola",
+					"Que como meninos aos pares",
+					"Também comerei a vós",
+					"Uns carochinhos de nada\""
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Caipora",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "8d8",
+				"average": 36
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 17,
+			"con": 10,
+			"int": 14,
+			"wis": 15,
+			"cha": 18,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5",
+				"survival": "+4",
+				"nature": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison"
+			],
+			"languages": [
+				"Caipora",
+				"Sylvan"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The caipora's innate spellcasting ability is Charisma (spell save {@dc 12}, +6 to hit with spell attacks). The caipora can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell faerie fire}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell sleep}",
+							"{@spell Tasha's hideous laughter}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Stone Camouflage",
+					"entries": [
+						"The caipora has advantage on Dexterity ({@skill Stealth}) checks made to hide in natural terrain."
+					]
+				},
+				{
+					"name": "Fey Resistance",
+					"entries": [
+						"The caipora has advantage on saving throws against being {@condition charmed}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage. The victim of a Caipora staff attack must suceed on a {@dc 13} Strenght saving throw or be {@condition reatrained} for 1 minute. At the end of each of its turns, the victim can make another Strenght saving throw. On a success, the {@condition restrained} condition ends on the target."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/150 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 hour."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Os Caipora são fadas humanóides de estatura baixa, de pele de cor amadeirada e umito ágeis. Às vezes são vistos montados em javalise carregando um cajado. Possuem certo comtrole sobre os animais das matas e por isso alguns os chamam de pequenos pastores da floresta.",
+					"Ao contrário do que dizem as lendas, os caiporas não temem a luz. Apenas gostam de vagar nas matas sob a luz da lua. Algumas tribos de caiporas devoram seus inimigos, o que dá uma fama ruim a estas criaturas, mas via de regra caiporas preferem vegetais e pequenos insetos.",
+					"Sociedade Mista: Caiporas comumente se unem a outras fadas e criaturas das matas como centauros, sátiros, dríades e curupiras. Caiporas são apreciadoras do fumo e é comum sentir um cheiro levemente adocicado ao chegar próximo de uma aldeia Caipora."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Capelobo",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 44",
+				"average": 104
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 18,
+			"int": 6,
+			"wis": 13,
+			"cha": 7,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Understand but not speak Common",
+				"Sylvan"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The capelobo has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The capelobo makes one claw attacks and one acid tongue attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Acid Tongue",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage plus 3 ({@damage 1d6}) acid damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Criatura bípede de pelugem escura, o capelobo tem o corpo parecido com o de lobisomens em sua forma híbrida, o que muitas vezes faz com que sua visão de costas seja confundida com a presença de um licantropo na região. Sua estatura, no entanto, é consideravelmente maior e sua cabeça é a mesma de um lobo, porém com um longo focinho de tamanduá da qual sai sua língua ácida e afiada. Suas longas pernas terminam em patas com cascos arredondados como patas de elefante.",
+					"O Capelobo possui hábitos carnívoros e a parte preferida em sua alimentação é a cabeça das criaturas, o que faz com que sua imagem seja associada a criaturas malignas, o que nem sempre é o caso.",
+					"Caminhante trôpego, besta furiosa: O capelobo tem um caminhar vacilante, apesar de ser bastante rápido e ágil. Quando agitado o corpo da criatura produz uma substância alcoólica que o torna nervoso devido à embriaguez, o que se assemelha a um frenesi descontrolado. O mesmo ocorre quando ingere qualquer bebida alcoólica.",
+					"Guarda-costas das selvas: O capelobo por sua força e agilidade muitas vezes é usado como um guarda-costas nas matas e selvas por druidas, bruxas e licantropos."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"A",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Caruara",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Caruara"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The caruara's innate spellcasting ability is Wisdom (spell save {@dc 11}, +3 to hit with spell attacks). The caruara can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell ensnaring strike}",
+						"{@spell spider climb}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell sleep}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Natural Camouflage",
+					"entries": [
+						"The caruara has advantage on Dexterity ({@skill Stealth}) checks made to hide when at 5ft of a tree."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 150 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Pela aparência insetóide, muitos chamam os Caruaras de \"Thri-kreen da Selva\". Apesar de certa semelhança física, não há qualquer parentesco entre essas criaturas. O Caruara parece",
+					"um bicho-de-pau erguido sobre duas patas, em posição ereta.",
+					"Ao contrário de seus falsos primos, os caruaras conseguem se",
+					"comunicar com palavras, ainda que sua língua nativa contenha uma série de estalos e batidas de mandíbulas que tornam sua reprodução quase impossível por outras criaturas.",
+					"Sociedade Coesa e Matriarcal: Caruaras vivem em pequenos grupos, com no máximo 100 habitantes. Esses grupos são sociedades matriarcais, e suas líderes são chamadas de rainhas por outras raças. Uma rainha (\"Caro-Oara\" na língua caruara) nasce de um ovo especial vindo da rainha mãe, e só eclode quando a Caro-Oara já está no fim de sua vida ou quando ela morre por causas não naturais. A nova Caro-Oara fica aos cuidados do Carú, o conjugê real. O Carú tem função decorativa na sociedade caruara exceto pelas funções de esposo e guarda-costas da Caro-Oara e tutor da futura Caro-Oara. Não há qualquer contestação de hierarquia na sociedade caruara e a união entre dois caruaras é estável e perdura até a morte."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Corpo-Seco",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 17,
+			"int": 11,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Death Aura",
+					"entries": [
+						"Any creature that starts its turn within 5 feet of the coprp-seco must succeed on a {@dc 15} Constitution saving throw or takes 7 ({@damage 2d6}) of necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The corpo-seco makes two claw attacks. It can use its Necrotic Ray in place of one claw attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Necrotic Ray",
+					"entries": [
+						"{@hit 5} to hit, reach 60 ft., one target. {@h}16 ({@damage 4d6 + 3}) necrotic damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Estas criaturas são criadas quando o mal que há nelas as leva a fazer o mal, torturar e seviciar mesmo aqueles que a querem bem. Após a morte, ela é condenada a vagar como um Corpo-Seco, repelida pelos deuses, demônios e diabos. Sua pele é retorcida e engelhada sobre uma carne putrefata e ossos fossilizados.",
+					"Memórias torturadas: o corpo-seco, ao voltar da morte sem voltar à vida, se torna uma sombra macabra da criatura vil que foi. Seus pensamentos mais terríveis, suas vontades mais insanas são potencializadas com a morte-vida, e os atos profanos tornam-se rastros de sua eterna jornada no mundo dos vivos. Alguns mortos-vivos poderosos usam o corpo-seco como agente, mas apenas quando o objetivo é o caos e a destruição. O desejo de fazer o mal e a crueldade intrínseca em sua existência tornam os corpos-secos aliados pouco previsíveis.",
+					"Aura de Morte: O corpo-seco exala uma aura de morte que não permite que nada cresça próximo a ele. Quando um copor-seco permanece muito tempo em um local, o solo se torna árido e nem plantas, nem animais de qualquer tipo conseguem sobreviver. Enquanto a criatura habita o local, fontes de água putrificam e nem mesmo mofo ou qualquer tipo de fungo resiste. Por essa existência nefasta, druidas e fadas são rápidos em enfrentar o corpo-seco em sua área, expulsando a criatura ou morrendo na tentativa."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Cuca",
+			"source": "QuaresmaMal-Assombrada",
+			"page": 169,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fey",
+				"tags": [
+					"hag"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 50
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 19,
+			"wis": 13,
+			"cha": 15,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"fire",
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't silvered"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Infernal",
+				"Sylvan"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The hag's innate spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell faerie fire}",
+						"{@spell poison spray}"
+					],
+					"daily": {
+						"1": [
+							"{@spell bestow curse}",
+							"{@spell fear}"
+						],
+						"3e": [
+							"{@spell charm person}",
+							"{@spell inflict wounds}",
+							"{@spell invisibility}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cuca makes two claw attacks and one bite attack in her true form, or one bite and one tail attack in crocodile form."
+					]
+				},
+				{
+					"name": "Claw (hag or female humanoid form only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d10 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage  and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}, and the crocodile can't bite another target."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}20 ({@damage 2d8 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 15}) . Until this grapple ends, the target is {@condition restrained}, and the crocodile can't bite another target."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The hag magically polymorphs into a Small or Medium female humanoid, into a giant crocodile, or back into her true form. Her statistics are the same in each form, but she can't make claw, bite or tail attacks in female humanoid form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Estes seres terríveis habitam florestas, pântanos, selvas e regiões montanhosas. Como as demais bruxas, a Cuca por vezes também forma convenções com outras bruxas e devora crianças para gerar sua prole.",
+					"Há varias lendas sobre a primeira Cuca, desde lendas que citam criaturas reptilianas ou dracônicas tendo relações com humanas, como nascida após uma bruxa verde devorar uma jovem criatura reptiliana ou dragão, ou ainda a lenda que Tiamat a teria criado usando como material sangue de crocodilo, casca de abóbora e gemas encantadas.",
+					"Se sua criação é misteriosa, sua existência é real. Canções nos povoados são entoadas durante a noite para que as crianças não saiam de seus quartos sob o risco de serem sequestradas e mortas pela Cuca, a bruxa de aparência reptiliana, escamas verdes, garras de águia e olhos e cabelos cor de fogo.",
+					"Astutas e cruéis. Cucas são criaturas sem qualquer apreço pela verdade, honra ou piedade. Utilizam de sua inteligência imbatível e força descomunal para planejar cuidadosamente como retalhar seus inimigos, tendo ao mesmo tempo a paciência de esperar o momento certo e a impulsividade desperta por uma fúria de terror e caos. Não há vida ou felicidade nas proximidades do lar de uma Cuca."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"I",
+				"N"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Curupira",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"S"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d6 + 34",
+				"average": 93
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 15,
+			"int": 12,
+			"wis": 18,
+			"cha": 14,
+			"skill": {
+				"perception": "+7",
+				"stealth": "+8",
+				"survival": "+7",
+				"nature": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't silvered"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"languages": [
+				"Curupira",
+				"Sylvan"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The curupira is a 10th-level spellcaster . Its spellcasting ability is Wisdom (spell save {@dc 14}, +7 to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell shillelagh}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell entangle}",
+								"{@spell longstrider}",
+								"{@spell speak with animals}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell animal messenger}",
+								"{@spell heat metal}",
+								"{@spell pass without trace}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell call lightning}",
+								"{@spell speak with plants}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Natural Passage",
+					"entries": [
+						"The curupira's trackers has disvadvantage on Wisdon (Perception) and any other checks made to track this fey when it's in natural terrain."
+					]
+				},
+				{
+					"name": "Fey Resistance",
+					"entries": [
+						"The curupira has advantage on saving throws against being {@condition charmed}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d6 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 150 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"O Curupira é um é uma entidade das matas, de pés virados para trás, cabelos ruivos e tamanho pequeno, como de um halfling. Curupiras são quase impossíveis de se rastrear e muitas vezes criam rastros falsos de propósito para atrair seus inimigos até armadilhas e tocaias. Curupiras evitam a civilização e preferem a convivencia com fadas e outros seres da floresta do que com humanóides.",
+					"O grito do Curuíra aterroriza os inimigos e avisa a mata que há invasores em suas terras. Se o Curupira evita as terras civilizadas, é certo que populações em terras curupiras evitam ainda mais nelas andar em pequenos bandos e por muito tempo, pois sabem do risco que correm.",
+					"Ódio Feérico. Curupiras têm especial ódio por orcs e goblinóides, e os atacam sempre que possível vencer, ou os enganam levando para longe de suas terras, quando consideram que uma batalha seria perdida"
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"L",
+				"N",
+				"T"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Gliptodonte",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 12",
+				"average": 34
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Gliptodonte é um mamífero herbívoro com cerca de 4 metros de comprimento, 1 metro de altura e pesando cerca de 1,5 toneladas. Sua característica mais marcante é sua enorme carapaça, usada por algumas tribos humanóides como moradia. Sua carapaça é também sua mais importante carcaterística de defesa contra predatores por sua rigidez e espessura. Além disso, sua cauda com escamas também rigidas e estruturas pontiagudas é utilizada para fortes golpes tanto defensivamente quanto quando combatendo outros gliptodontes por rivalidade de território ou acasalamento.",
+					"O gliptodonte é um parente gigante dos tatus. Habitam regiões de floresta e planícies, tanto em climas quentes quanto climas frios. Ao contrário dos demais mamíferos de grande tamanho, gliptodontes não gastam muita energia e são capazes de ficar grandes períodos de tempo em regimes alimentares forçados."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Labatut",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "13d8 + 26",
+				"average": 84
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 50,
+				"burrow": 20,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 15,
+			"int": 13,
+			"wis": 15,
+			"cha": 12,
+			"save": {
+				"dex": "+8",
+				"int": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons."
+				}
+			],
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Keen Sight",
+					"entries": [
+						"The labatut has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Light Sensitivity",
+					"entries": [
+						"While in bright light, the labatut has disadvantage on attack rolls and Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The labatut regains 10 hit points at the start of its turn if it has at least 1 hit point. If the labatut takes fire or radiance damage, this trait doesn't function at the start of the labatuy's next turn. The labatut dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The labatut can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the labatut moves at least 10 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 9 ({@dice 2d8}) slashing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The labatut makes two claw attacks, one bite attack and one gore attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"O Labatut é uma criatura advinda das entranhas da terra, invadindo vilarejos na Umbraeterna ou próximos a cavernas de profundidade desconhecida. Caçadores solitários, preferem devorar elfos negros a colaborar com eles, semdo temidos por todos os povos de Umbraeterna por sua violência e crueldade.",
+					"Labatuts tem uma forma vagamente humanóide completamente coberta por pelos que variam de marrom escuro a copletamente negros, exceto pelos chifres que existem em sua cabeça, pelas presas semelhantes a de um elefante que saem de sua boca e pelo enorme e único olho no meio de sua testa.",
+					"O caçador da escuridão: O Labatut é uma criatura inteligente que odeia a luz. Mesmo quando está faminto, o Labtut evita luzes fortes e, quando fora de cavernas e ruínas subterrâneas, ataca sempre após o anoitecer. Sua velocidade incrível e sua agilidade fazem com que seja conhecido por caminhar nos ventos.",
+					"Inimigo eterno: Uma região atormentada por um Labatut é uma região atormentada através dos tempos, pois labatuts não morrem de velhice. Após chegarem a idade adulta, eles param de envelhecer, só morrendo por falta de comida ou por morte violenta."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Charge",
+				"Keen Senses",
+				"Light Sensitivity",
+				"Regeneration"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"U"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Mapinguari",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 80",
+				"average": 184
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 14,
+			"con": 20,
+			"int": 13,
+			"wis": 15,
+			"cha": 12,
+			"save": {
+				"dex": "+6",
+				"cha": "+5"
+			},
+			"skill": {
+				"perception": "+6",
+				"animal handling": "+6",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons."
+				}
+			],
+			"languages": [
+				"Common",
+				"Sylvan"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The mapinguari has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					]
+				},
+				{
+					"name": "Stench",
+					"entries": [
+						"Any creature that starts its turn within 10 feet of the mapinguari must succeed on a {@dc 17} Constitution saving throw or be {@condition poisoned} until the start of its next turn. On a successful saving throw, the creature is immune to the mapinguari's Stench for 24 hours."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the mapinguari can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mapinguari makes two claw attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d10 + 5}) piercing damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 17} Dexterity saving throw or be swallowed by the mapinguari. A swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the mapinguari, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the mapinguari's turns. If the mapinguari takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the mapinguari. If the mapinguari dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Poison Breath {@recharge 5}",
+					"entries": [
+						"The mapinguari exhales poisonous gas in a 60-foot cone. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 52 ({@damage 15d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"O Mapinguari é uma criatura gigantesca, chegando a medir 5 metros de altura. A criatura tem o corpo completamente coberto de um pelo vermelho e costumam usar armaduras que eles mesmo produzem de escamas retiradas de répteis gigantes. Sua cabeça é presa ao corpo por um pescoço longo e largo, e é dominada por um grande olho. Sua boca sem lábios e com duas fileiras de dentes serrilhados se abre verticalmente por todo o seu abdomem é capaz de engolir uma criatura média com facilidade. A criatura emite um cheiro forte que pode ser sentido de longe, deixando tonto aqueles que chegam perto demais do Mapinguari.",
+					"O caçador furioso das matas: O Mapinguari é uma criatura inteligente. Porém, quando a fome é demais e a criatura sente o cheiro de sangue ela entra num estado de frenesi selvagem e só para quando sua presa foi derrotada ou quando o próprio mapinguari é morto.",
+					"Domador de Megatérios: O Mapinguari é uma criatura solitária, mas alguns gostam da companhia de Megatérios e mantém um pequeno número com eles. Estes megatérios são treinador para atacar os inimigos do Mapinguari, ou para atrair as vítimas até o caçador furioso das matas."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Keen Senses",
+				"Reckless"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Swallow"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned",
+				"restrained"
+			]
+		},
+		{
+			"name": "Matinta Perera",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fey",
+				"tags": [
+					"hag"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 14,
+			"int": 13,
+			"wis": 13,
+			"cha": 15,
+			"skill": {
+				"perception": "+3",
+				"deception": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't silvered"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Infernal",
+				"Sylvan"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The hag's innate spellcasting ability is Charisma (spell save {@dc 12}, +4 to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell chromatic orb}",
+						"{@spell disguise self}",
+						"{@spell guidance}",
+						"{@spell hex}"
+					],
+					"daily": {
+						"1": [
+							"{@spell arcane eye}",
+							"{@spell blight}",
+							"{@spell fabricate}"
+						],
+						"3e": [
+							"{@spell bane}",
+							"{@spell blindness/deafness}",
+							"{@spell locate object}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The matinta perera makes two staff attacks in her true form, or one with its beak and one with its talons in avian (owl or raven) forms."
+					]
+				},
+				{
+					"name": "Staff (female humanoid form only)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Beak (avian form only)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Frightning Wail (avian form only) {@recharge 5}",
+					"entries": [
+						"The hag releases a horrifying wail. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a {@dc 14} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the hag's Frightning Wail for the next 24 hours."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The hag magically polymorphs into a Small or Medium female humanoid, into a giant owl, a giant raven (treat as a giant vulture), or back into her true form. Her statistics are the same in each form, but she can't make beak or talons attacks in female humanoid form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Matintas Pereras são bruxas metamorfas que usam de seus poderes para fazer chantagens e obter poder, seja na forma de relíquias, ouro, pedras preciosas, ou favores.",
+					"Em sua forma humanóide são comumente confundidas com velhas humanas, mas conseguem se transformar em senhoras de outras raças de tamanho médio ou pequeno. Sua forma real é a de um grande corvo, mas sua habilidade de metamorfose também permite que se transformem em uma coruja gigante. Na forma alada, sobrevoam os vilarejos próximos com gritos apavorantes, aterrorizando as populações. Na forma de velha, surgem como pedintes ou pequenas vendedoras, se misturando ao povo para cobrar as dívidas.",
+					"Ninguém sabe a origem dessas criaturas. Alguns sábios especulam que a primeira Matinta Perera foi uma bruxa amaldiçoada. Outros afirmar que elas existem desde o começo dos tempos, surgindo na mesma época da criação das raças metamorfas. Outras afirmam que são filhas dos planos.",
+					"Associações e Convenção: Matintas Pereras raramente se reunem a outras bruxas, mas nestas ocasiões se unem com o propósito de aumentar seu poder através dos rituais de convenção para defesa contra uma grande ameaça ou para um ato de vingança. Quando chamadas por outras bruxas para",
+					"uma convenção, Matintas Pereras raramente negam ajuda. Fora das convenções, elas se associam a outros metamorfos, a pequenos humanóides malignos que as servem em pequenas tarefas ou a gigantes de baixa inteligência utilizados como guarda-costas."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Megatério",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 18",
+				"average": 51
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Expert Climbing",
+					"entries": [
+						"The megaterio can climb a not slippery vertical surface or one with few handholds without any extra cost. If the climb needs a athletics roll, the megaterio has advantage on that roll."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"If the megaterio hits with both claw attacks, it latches onto the opponent’s body and tears the flesh. This attack automatically deals an additional {@dice 1d6} of slashing damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The megatério makes two claw attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Megatério ou preguiça-gigante é um mamífero herbívoro com cerca de 4 metros de altura, garras grandes e afiadas e uma língua comprida utilizada para alcançar folhas e frutos mais altos poupando energia, pois seu tamanho exige uma dieta contendo grandes quantidade de comida. Sua aparência é semelhante a da preguiça comum, exceto pelo seu tamanho.",
+					"A preguiça-gigante é um animal pacífico, mas capaz de se defender muito bem com suas garras se ela ou sua cria forem ameaçadas. Assim como o mamute e o tigre dente-de-sabre o megatério pertence à fauna dos mamíferos gigantes"
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Mula Sem Cabeça",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 28",
+				"average": 66
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 18,
+			"int": 11,
+			"wis": 14,
+			"cha": 17,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"understands Abyssal",
+				"Common",
+				"and Infernal but can't speak."
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Illumination",
+					"entries": [
+						"The mula sem cabeça sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the mula sem cabeça moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the mula sem cabeça can make one attack with its hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The mula exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Há momentos em que a falta de fé de um sacerdote tem em sua origem a desconfiança de seu cônjuge. E a lenda diz que há muitas eras um sacerdote abandonou os preceitos de sua divindade, traiu seus irmãos e permitiu que uma grande desgraça ocorresse em sua aldeia. Tudo para satisfazer a pessoa amada. Os deuses ficaram descontentes e amaldiçoaram os dois. O sacerdote viveria uma eternidade de tormentos no Hades. A pessoa amada, que propositalmente fez com que o sacerdote abandonasse sua fé, não teve tanta sorte. Foi amaldiçoada se tornando a primeira mula sem cabeça.",
+					"A mula sem cabeça se parece com um garanhão cor de ébano com cascos vermelhos, exceto que no local onde estaria sua cabeça há apenas uma labareda infernal. As mulas rivalizam com os pesadelos nos baixos planos, sendo tão velozes e fortes quanto seus rivais. Porém, mais geniosas, as mulas são ainda mais difíceis de se tornarem uma montaria confiável.",
+					"Conjurando uma Mula sem Cabeça: Para conjurar uma mula sem cabeça é necessário o sacrifício de água benta, símbolos sagrados, livros com preces, todos devendo ser profanados pelo conjurador. Caso a mula considere a profanação adequada, ela aceita ser usada como montaria. Caso contrário, ela tenta escapar de qualquer grilhão mágico que a prenda e ataca o conjurador, sem medo de morrer pois sua destruição no plano material é apenas sua libertação ao se reformar nos baixos planos."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Illumination"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Onça",
+			"source": "QuaresmaMal-Assombrada",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "5d10 + 5",
+				"average": 32
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 40,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 13,
+			"int": 3,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+7",
+				"athletics": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The tiger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Tiger.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/tiger.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Pisadeira",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d12 + 60",
+				"average": 138
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 20,
+			"int": 14,
+			"wis": 13,
+			"cha": 14,
+			"save": {
+				"dex": "+7",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't silvered"
+				}
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Giant"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The pisadeira's innate spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"1": [
+							"{@spell Evard's black tentacles}"
+						],
+						"3e": [
+							"{@spell contagion}",
+							"{@spell silence}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Light Sensitivity",
+					"entries": [
+						"While in bright light, the pisadeira has disadvantage on attack rolls and Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the pisadeira can take the {@action Hide} action as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The pisadeira makes two claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage plus ({@damage 3d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 60/240 ft., one target. {@h}25 ({@damage 4d10 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Uma Pisadeira é uma criatura gigantesca, de formato humanóide, com cabelos brancos e longos, olhos brancos e pele escura em tons de chumbo. Medindo cerca de seis ou sete metros, possui membros longos, terminando em mãos e pés perfurados com quatro dedos com longas e afiadas garras.",
+					"Caminhante Noturno: A Pisadeira tem hábitos noturnos, caçando animais e humanóides para saciar sua fome. Sua pele e suas vestes normalmente de tons escuros se mescla ao negrume da noite, tornando-a uma caçadora muito perigosa.",
+					"A Maldição: A lenda diz que a primeira pisadeira é fruto de experiências profanas de uma antiga divindade da escuridão e corrupção, que banhou o corpo de um gigante do gelo morto com o sangue de uma bruxa da noite e o reviveu utilizando como espírito um demônio das sombras. Se a lenda é verdadeira ou não é impossível dizer, mas as pisadeiras se parecem com gigantes do gelo de pele escurecida, corpo magro e membros alongados e seu caráter é tão vil quanto de qualquer bruxa da noite ou demônio das sombras. O nome Pisadeira se refere tanto aos machos quanto às fêmeas da espécie."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Light Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		},
+		{
+			"name": "Porca dos Sete Leitões",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 44",
+				"average": 104
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 19,
+			"int": 8,
+			"wis": 13,
+			"cha": 15,
+			"save": {
+				"con": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Leitões Amaldiçoados",
+					"entries": [
+						"Sete leitões voam ao redor da Porca em uma área de até 30 feet e a protegem. Qualquer criatura que entre nessa área pela primeira vez ou inicie o turno nela deve fazer um {@dc 12} Saving Throw de Carisma ou sofrerá 17 ({@damage 7d4}) pontos de dano necrótico. Em caso de sucesso, sofre-se metade do dano. Um clérigo que use Expulsar Mortos-Vivos pode afetar os leitões. Considera que eles tem saving throws iguais à Porca e metade do seu nível de desafio. Leitões expulsos somem por 1 minuto, Leitões destruídos são purificados e nunca mais retornam ao seu tormento. Um conjurador também poder usar Remover Maldição nos leitões para purificá-los. O dano deste efeito é reduzido em {@dice 1d4} para cada leitão expulso ou purificado."
+					]
+				},
+				{
+					"name": "Leitões Lamuriosos",
+					"entries": [
+						"Ao chegar a 60 feets da Porca, o choro dos leitões fica tão intenso que qualquer criatura capaz de ouvi-los deve fazer um {@dc 12} Saving Throw de Sabedoria, ou ficará atordoada durante 1 minuto. Uma criatura pode repetir o saving throw no final de seu turno para sair do efeito. Uma criatura bem sucedida ou que consiga sair do efeito fica imune a ele por 24 horas. Se não houver leitões, o efeito acaba."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The porca dos sete leitões has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Visão Etérea",
+					"entries": [
+						"A Porca pode ver a até 60 feet no Plano Etéreo quando está no Plano Material, e vice-versa."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordida",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage e o alvo deve fazer um {@dc 15} Saving Thrown de Constituição. Se falhar, sofre ({@damage 3d6}) pontos de dano necrótico e seus pontos de vida máximos são reduzidos pelo mesmo valor. Se uma criatura for reduzida a 0 pontos de vida, ela morre. Se o alvo for bem sucedido no Save, ele sofre apenas metade do dano necrótico."
+					]
+				},
+				{
+					"name": "Baforada Innfernal",
+					"entries": [
+						"Cada criatura dentro de um cone de 15 pés deve fazer um {@dc 15} Saving Thrown de Destreza. Se falhar, sofre ({@damage 4d6}) de dano de fogo ou metade em caso de sucesso."
+					]
+				},
+				{
+					"name": "Forma Etérea",
+					"entries": [
+						"A Porca pode acessar o Plano Etéreo do Plano Material, ou vice-versa. Ela é invisível no Plano Material enquanto estiver na Fronteira Etérea, e vice-versa, além de não poder afetar ou ser afetado por nada no outro plano."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Esquiva Etérea",
+					"entries": [
+						"Se um oponente errar um ataque à distância contra a Porca, ela pode ir para o Plano Etéreo em seguida. Ela retorna para o Plano Material no início do seu próximo turno em até 15 pés do local onde ela sumiu."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Um estrondante cavalgar é ouvido ao longe, misturando-se ai som de grunhidos, choro e lamúria. Vê-se correndo umaporca, grande como um boi, de longos cabelos e com uma mandíbula desproporcionalmente larga e com grandes dentes. Sua respiração solta pequenas chamas e, ao seu redor, vários pequenos leitões fantasmagóricos correm e voam, grunhem e choram com vozes humanas. Parecem ser sete leitõeszinhos.",
+					"A mulher que seja amante de homem casado, tenha filhos com ele e mate ou aborte esses bebês ou a mulher que deixe morrer seus filhos para obedecer a um amante, se tornará uma porca gigante e grotesca ao morrer, que correrá pelas noites, sempre depois da meia noite, acompanhada dos fantasmas de seus filhos, que carregam a maldição junto com sua mãe.",
+					"A criatura vaga pela eternidade, principalmente pelas estradas, atacando homens infiéis e os cruéis, impedindo que outras moças sofram igual destino. Também é comum vê-la revirando a terra em cemitérios próximos de igrejas.",
+					"Fim da Maldição: Para cada filho que não chegou à idade adulta, a Porca terá consigo um leitãozinho fantasmagórico. Por algum motivo, é normal que sejam sete. A Porca cava, buscando achar o local onde cada um deles foi enterrado. Se um corpo for desenterrado e receber o funeral correto, um leitão é purificado. Se todos os leitões forem purificados, a maldição da Porca enfim termina.",
+					"Caçadora de Homens Ruins: A Porca possui algum meio de sentir se homens já traíram ou agrediram uma mulher com a qual tinham uma relação ela fará tudo que puder para dar a esses homens uma morte bastante dolorosa e tentar proteger essas tais mulheres."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Saci",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "17d8 + 55",
+				"average": 131
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90,
+				"canHover": false
+			},
+			"str": 15,
+			"dex": 22,
+			"con": 16,
+			"int": 17,
+			"wis": 17,
+			"cha": 20,
+			"save": {
+				"dex": "+10",
+				"cha": "+9"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"conditionImmune": [
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Auran",
+				"Sylvan"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"he saci's innate spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). The saci can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell minor illusion}"
+					],
+					"daily": {
+						"1": [
+							"{@spell lightning bolt}"
+						],
+						"3e": [
+							"{@spell fog cloud}",
+							"{@spell gust of wind}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Nature Demise",
+					"entries": [
+						"If the saci dies, its body disintegrates into a mushroom ring, leaving behind only equipment the saci was wearing or carrying."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The saci magically turns {@condition invisible} until it attacks or casts a spell , or until its concentration ends (as if concentrating on a spell). Any equipment the saci wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The saci makes two staff attacks."
+					]
+				},
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 6}) bludgeoning damage plus 7 ({@damage 2d6}) lightning or thunder damage (saci's choice)."
+					]
+				},
+				{
+					"name": "Create Whirlwind",
+					"entries": [
+						"A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the saci can see within 120 feet of it. The whirlwind lasts as long as the saci maintains concentration (as if concentrating on a spell). Any creature but the saci that enters the whirlwind must succeed on a {@dc 17} Strength saving throw or be {@condition restrained} by it. The saci can move the whirlwind up to 60 feet as an action, and creatures {@condition restrained} by the whirlwind move with it. The whirlwind ends if the saci loses sight of it.",
+						"A creature can use its action to free a creature {@condition restrained} by the whirlwind, including itself, by succeeding on a {@dc 17} Strength check. If the check succeeds, the creature is no longer {@condition restrained} and moves to the nearest space outside the whirlwind."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Quando os nobres djinnis ou a corte feérica precisa executar trabalhos no mundo dos mortais, o saci muitas vezes é o escohido. Nascido do casamento do ar elemental e da natureza primordial, o saci viaja como mensageiro, espião, guarda-costas e assassino.",
+					"Sacis têm a forma de homens jovens, negros como a obsidiana, porém possui apenas uma perna, envolta por um pequeno tufão de ar. Fortes e ágeis, sacis sempre carregam consigo seu bordão, seu gorro e seu cachimbo. Muitos sacis tem preferência pela cor vermelha, podendo usar roupas desta cor ou ter alguma idiossincrasia como só aceitar pagamento em rubis.",
+					"Movidos pelo desafio: Sacis são movidos por desafios e os tratam de forma extremamente passional. Com isso, sempre buscam viajar o mais rápido possível, não serem detectados ou vencer qualquer outro obstáculo criado por sua missão ou por sua própria mente.",
+					"Amantes do Caos: Sacis não se adaptam a hierarquias, regras ou qualquer tipo de organização. Quando não estão em uma missão, é prática comum acabarem com padrões de organização, seja espalhando itens de uma despensa, misturando moedas em um tesouro ou desfazendo marcas de trilhas numa floresta. Além disso, sacis possuem um humor e uma moral típicos das fadas, fazendo com que por vezes cometa pequenos furtos, pregue peças ou se deixe levar por um surto de vingança."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"T"
+			],
+			"damageTagsSpell": [
+				"L"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible",
+				"restrained"
+			]
+		},
+		{
+			"name": "Teiniaguá",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fey",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 39",
+				"average": 97
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 16,
+			"int": 13,
+			"wis": 14,
+			"cha": 15,
+			"skill": {
+				"deception": "+5",
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"fire",
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons that aren't silvered"
+				}
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Sylvan"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The teiniaguá's innate spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell friends}",
+						"{@spell produce flame}",
+						"{@spell speak with animals}"
+					],
+					"daily": {
+						"1": [
+							"{@spell animate dead}",
+							"{@spell conjure animals}",
+							"{@spell fireball}"
+						],
+						"3e": [
+							"{@spell confusion}",
+							"{@spell fog cloud}",
+							"{@spell invisibility}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The teiniagua makes three greatsword attacks in humanoide form, or one bite and one gore attack in reptilian form."
+					]
+				},
+				{
+					"name": "Sword (humanoid form only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}20 ({@damage 4d8 + 2}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The teiniagua magically polymorphs into a horned giant lizard. Her statistics are the same in each form, but she can't make bite or gore attacks in humanoid form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Segundo a lenda, a primeira teiniaguá foi uma princesa guerreira capturada por poderosas bruxas e corrompida através de um ritual profano. Algumas versões dizem que envolvia sangue de homens lagartos. Outras dizem que a alma de uma criatura reptiliana foi unida a dela, enlouquecendo-a e a tornando cruel. Talvez seja apenas uma lenda.",
+					"Teiniaguás se parecem com humanos do seu gênero, exceto pelos olhos reptilianos. Suas habilidades de se transformarem em lagartos gigantes e seus poderes mágicos os tornam adversários terríveis. Quando em forma reptília, se parece com um lagarto gigante que possui um chifre cristalino capaz de desferir poderosos golpes.",
+					"Violência e paixão: Teiniaguás são criaturas arrebatadas por paixões, às vezes momentâneas, às vezes eternas. Após se apaixonarem por alguém ou por algo, podendo ser uma jóia, um item mágico, um humanóide ou outro ser inteligente, fazem de tudo para ter consigo o alvo de seus sentimentos. Para isso não se recusam a matar aqueles que se opõem e destruir quaisquer obstáculos, mesmo que o resultado final seja terra arrasada. Se uma Teiniaguá não pode ter seu objeto de paixão, ninguém mais pode. Vilas inteiras acabam em cinzas quando se colocam entre uma Teiniaguá e sua obsessão. Quando saciadas ou sem uma paixão, são seres de fácil trato, ainda que sem motivação alguma para fazer qualquer coisa que não seja de seu interesse.",
+					"Animais e Mortos Vivos: Teiniguás vivem com seus servos animais ou mortos vivos e com seu objeto de paixão do momento. Suas habilidades de falar com animais normalmente são usada para domesticar grandes répteis ou grandes felinos e esta segunda opção muitas vezes surpreende seus inimigos. Servos zumbis e esqueletos costumam ser usados para proteção de seus bens ou propriedades."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Tibungue",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"yugoloth"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d6 + 3",
+				"average": 13
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 13,
+			"skill": {
+				"deception": "+3",
+				"insight": "+2",
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"lightning"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"immune": [
+				"acid",
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The tibungue's innate spellcasting ability is Charisma (spell save {@dc 11}, +3 to hit with spell attacks). The tibungue can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell fire bolt}"
+					],
+					"daily": {
+						"1": [
+							"{@spell fear}"
+						],
+						"3e": [
+							"{@spell bane}",
+							"{@spell clairvoyance}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Transport via Bonfire",
+					"entries": [
+						"This ability creates a magical link between a Medium or larger inanimate blazing place at 5 feet and another blazing place, as a bonfire, a hearth or a lava pool at any distance, on the same plane o f existence. The fiend must have seen or touched the destination fire at least once before. The Tibungue can transport via bonfire as a bonus action."
+					]
+				},
+				{
+					"name": "Death Throes",
+					"entries": [
+						"When the tibungue dies, it explodes, and each creature within 5 feet of it must make a {@dc 11} Dexterity saving throw, taking 3 ({@damage 1d6}) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried, and it destroys the tibungue's flamable possessions."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6+2}) slashing damage plus 3 ({@damage 1d6}) fire damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Este pequeno ser dos baixos planos possui apenas uma perna, corpo humanoide com cabelos longos, compridos em chamas e olhos ígneos. Seus braços compridos e fortes chegam quase a tocar no chão, terminando em mãos muito grandes, com dedos finos e compridos e garras afiadas. Tibungues são conjurados a este plano para executar pequenos atos malignos.",
+					"Mensageiros dos Yugoloths: Não sendo fortes o suficiente para venderem seus serviços como soldados, ou astutos e imponentes para servirem como diplomatas, Tibungues normalmente vendem seus serviços como mensageiros devido a sua velocidade e poder de viajar entre as chamas. Arcanaloths e Ultroloths são seus principais empregadores, mas muitos acabam conjurados ao mundo material por magos para fazerem pequenas tarefas, enviar ameaças ou realizar pequenos furtos e assassinatos."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Death Burst"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Tutu Marambá",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 15,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"con": "+8",
+				"int": "+5",
+				"wis": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Sylvan",
+				"telepathy 120 ft."
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"he Tutu's innate spellcasting ability is Charisma (spell save {@dc 14}, +5 to hit with spell attacks). The alamoa can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell detect thoughts}",
+						"{@spell disguise self}",
+						"{@spell tongues}"
+					],
+					"daily": {
+						"1": [
+							"{@spell phantasmal killer}"
+						],
+						"3e": [
+							"{@spell gaseous form}",
+							"{@spell invisibility}",
+							"{@spell sleep}",
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Nightmare",
+					"entries": [
+						"The Tutu targets one sleeping creature it can see within 60 feet of it. The nightmare so prevents restful sleep and causes ({@damage 1d10}) points of psichic damage. The target suffers one level of {@condition exhaustion} and is unable to regain spell slots for the next 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tutu makes three attacks with its claws."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Nenhuma noite é tranquila, na mata ou nas vilas, se ali próximo habita um Tutu Marambá. Tutu é um ser que se alimenta do medo e da insônia. Sua aparência é de um enorme urso com grandes orelhas de morcego e olhos com o globo ocular inteiramente branco, sem pupilas ou quaisquer outras divisões. Sua boca enorme é cheia de presas como as de um tubarão.",
+					"Não se sabe ao certo como o primeiro Tutu Marambá surgiu, mas especula-se que tenha vindo da Corte Crepuscular, seja em alguma missão sombria, seja banido por motivos desconhecidos.",
+					"Eterno Sequestrador: Sendo incapaz de se reproduzir, Tutus sequestram crianças humanóides quando desejam criar uma prole, realizando um ritual sombrio que termina por encasular a criança em meio a fios negros como a noite. Após 10 dias, a criança não mais existe e surge como um novo Tutu, já em sua forma adulta. Após encasulada o alvo só pode reverter o ritual com uma Restauração Maior. Caso a tranformação seja concretizada, apenas a morte do novo Tutu e uma Ressurreição Verdadeira podem trazer de volta a vítima.",
+					"Mestre dos Pesadelos: Não há sono tranquilo em regiões onde um Tutu habita. Tutus enviam sonhos macabros e assutadores a suas vítimas, fazneod com que estas acordem no meio da noite, aterrorizadas.",
+					"Casas Abandonadas: Ocorre por vezes que um Tutu resolve adentrar em uma vila e observar o comportamento dos mortais. A escolha de seu covil acaba sendo por casas abandonadas, quando usam seus poderes para afastar as pessoas do local e a fortalecer a lenda de que o local é mal assombrado."
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Yauaretê Adulto",
+			"isNamedCreature": true,
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 15,
+			"int": 8,
+			"wis": 14,
+			"cha": 12,
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the yauaretê moves on its turn in combat, it can double its speed until the end of its turn. Once you use this feature, the yauaretê cannot use it again on your next turn."
+					]
+				},
+				{
+					"name": "Speak with Animals",
+					"entries": [
+						"The yauaretê can communicate with jaguars as if casting the speak with animals spell, limited to jaguars, at will."
+					]
+				},
+				{
+					"name": "Predator Instincts",
+					"entries": [
+						"The yauaretê has advantage on Dexterity ({@skill Acrobatics}) checks."
+					]
+				},
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The yauaretê jovem has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					]
+				},
+				{
+					"name": "Jaguar Companion",
+					"entries": [
+						"The yauaretê has a jaguar as an animal companion, which it can mentally summon at will."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The yauaretê makes two attacks with the jaguar's claws or one attack with the claw and another with the bite."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Incapacitating",
+					"entries": [
+						"The yauaretê scratches two circles on the ground and steps on them, pointing to a humanoid in sight up to 90 feet away. If the target can see the iauaretê, it must succeed on a {@dc 12} Wisdom saving throw or suffer the effects of the sleep spell."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Jaguar Claw",
+					"entries": [
+						"When hit by a melee attack, the yauaretê can use its reaction to make a melee attack to push back the creature that made the attack. He makes a Strength ({@skill Athletics}) check, opposed by the target's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (he can choose which). If it fails, the target is pushed up to 5 feet away from the yauaretê and is {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Nem gente, nem bicho, mas um pouco dos dois. Assim são os yauaretês, os filhos-da-onça. Caçadores hábeis, rastreadores infalíveis e predadores manhosos, costumam viver isolados no meio do mato, sempre caçando, sempre à espreita. Enlouquecidos pelo cheiro do sangue ou pelo gosto da carne fresca, os yauaretês podem perseguir suas presas durante muitos dias, por muitas léguas, esperando apenas o momento certo para dar o bote final.",
+					"Parentes da Onça: Nascem durante estranhos fenômenos climáticos ou celestes, são filhos de pais ou mães yauaretês ou de humanos que foram feridos por uma onça, mas conseguiram sobreviver. Criados entre os povos civilizados, os bebês podem exibir traços felinos ou pintas e sardas sobre a pele, mas só começam a manifestar sua verdadeira herança durante a puberdade. Primeiro, uma agilidade incomum e sentidos extremamente aguçados. Porém, com o tempo, seus traços ferais vão se tornando cada vez mais aparentes, acompanhados de um apetite insaciável por carne humana, élfica e pequenina. Ao longo da vida, quanto mais matam, mais bicho se tornam, até se transformarem completamente em onças, perdendo a sanidade e metendo-se no mato, para nunca mais voltar.",
+					"Desde jovens podem se comunicar com onças e quando atingem a idade adulta desenvolvem um vínculo de controle mental com um desses felinos. Embora não esteja o tempo todo ao lado do yauaretê, o animal mantém-se nas proximidades e pode ser convocado mentalmente a qualquer momento, e sempre atende de pronto.",
+					"Predadores Astutos e Vingativos: A maioria dos yauaretês prefere o isolamento, ocupando cabanas abandonadas na floresta ou simplesmente devorando seus moradores. Mas outros gostam de brincar com a comida, vivendo entre os povos civilizados, atuando como mateiros, batedores, caçadores ou guias, passando-se por guardiões ou druidas enquanto vão tecendo suas teias e seus intrincados jogos mentais sobre aqueles a quem decidiram caçar ou contra quem juraram vingança, amedrontando-os, atiçando-os e tornando suas vidas um inferno, enquanto saboreiam o desespero que causam. ",
+					"Os yauaretês são criaturas invejosas e cobiçam até mesmo os itens mais mundanos de suas vítimas, tendo uma preferência especial por objetos brilhantes, armas, bebida, roupas finas e outros itens que lhes pareçam valiosos, mesmo sem ter valor algum. "
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Yauaretê Jovem",
+			"source": "QuaresmaMal-Assombrada",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Feline Agility",
+					"entries": [
+						"When the yauaretê moves on its turn in combat, it can double its speed until the end of its turn. Once you use this feature, the yauaretê cannot use it again on your next turn."
+					]
+				},
+				{
+					"name": "Speak with Animals",
+					"entries": [
+						"The yauaretê can communicate with jaguars as if casting the speak with animals spell, limited to jaguars, at will."
+					]
+				},
+				{
+					"name": "Predator Instincts",
+					"entries": [
+						"The yauaretê has advantage on Dexterity ({@skill Acrobatics}) checks."
+					]
+				},
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The yauaretê jovem has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Nem gente, nem bicho, mas um pouco dos dois. Assim são os yauaretês, os filhos-da-onça. Caçadores hábeis, rastreadores infalíveis e predadores manhosos, costumam viver isolados no meio do mato, sempre caçando, sempre à espreita. Enlouquecidos pelo cheiro do sangue ou pelo gosto da carne fresca, os yauaretês podem perseguir suas presas durante muitos dias, por muitas léguas, esperando apenas o momento certo para dar o bote final.",
+					"Parentes da Onça: Nascem durante estranhos fenômenos climáticos ou celestes, são filhos de pais ou mães yauaretês ou de humanos que foram feridos por uma onça, mas conseguiram sobreviver. Criados entre os povos civilizados, os bebês podem exibir traços felinos ou pintas e sardas sobre a pele, mas só começam a manifestar sua verdadeira herança durante a puberdade. Primeiro, uma agilidade incomum e sentidos extremamente aguçados. Porém, com o tempo, seus traços ferais vão se tornando cada vez mais aparentes, acompanhados de um apetite insaciável por carne humana, élfica e pequenina. Ao longo da vida, quanto mais matam, mais bicho se tornam, até se transformarem completamente em onças, perdendo a sanidade e metendo-se no mato, para nunca mais voltar.",
+					"Desde jovens podem se comunicar com onças e quando atingem a idade adulta desenvolvem um vínculo de controle mental com um desses felinos. Embora não esteja o tempo todo ao lado do yauaretê, o animal mantém-se nas proximidades e pode ser convocado mentalmente a qualquer momento, e sempre atende de pronto.",
+					"Predadores Astutos e Vingativos: A maioria dos yauaretês prefere o isolamento, ocupando cabanas abandonadas na floresta ou simplesmente devorando seus moradores. Mas outros gostam de brincar com a comida, vivendo entre os povos civilizados, atuando como mateiros, batedores, caçadores ou guias, passando-se por guardiões ou druidas enquanto vão tecendo suas teias e seus intrincados jogos mentais sobre aqueles a quem decidiram caçar ou contra quem juraram vingança, amedrontando-os, atiçando-os e tornando suas vidas um inferno, enquanto saboreiam o desespero que causam. ",
+					"Os yauaretês são criaturas invejosas e cobiçam até mesmo os itens mais mundanos de suas vítimas, tendo uma preferência especial por objetos brilhantes, armas, bebida, roupas finas e outros itens que lhes pareçam valiosos, mesmo sem ter valor algum. "
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/DMG/Giant Fly.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		}
+	]
+}
